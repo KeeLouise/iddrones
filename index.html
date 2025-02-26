@@ -9,14 +9,28 @@
   <title>Homepage</title>
   <link href="homepagestyles.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div id="wrapper">
   <header class="header">
+    <div id="social-icons">
+      <a href="https://www.linkedin.com" class="fa fa-linkedin" alt="link to linkedin"></a>
+      <a href="https://www.facebook.com" class="fa fa-facebook" alt="link to linkedin"></a>
+      <a href="https://www.instagram.com" class="fa fa-instagram" alt="link to linkedin"></a>
+      </div>
       <img src="./images/comapny-logo-desktop.png" width="500" height="250" alt="Company Logo" class="desktop-logo">
-      <img src="" width="350" height="250" alt="Company Logo" class="mobiletablet-logo">
+      <img src="./images/comapny-logo-desktop.png" width="350" height="250" alt="Company Logo" class="mobiletablet-logo">
+      <div class="top-bar">
+        <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search this page...">
+        <button type="button" id="search-button">Search</button>
+        <div id="message">
+        </div>
+        </div>
+      </div>
   </header>
 
   <nav>
@@ -48,7 +62,7 @@
     <hr>
     Copyright &copy; 2025 iD Drones.<br>
     <h2 id="newsletter-heading">Join our newsletter</h2>
-    <form id = homeform method="get" aria-labelledby="newsletter-heading">
+    <form id="homeform" method="get" aria-labelledby="newsletter-heading">
       E-mail: <input type="text" name="email" id="email" placeholder="Please type your email" aria-describedby="email-instruction">   <!--ARIA Label-->
       <button type="button" aria-label="Sign up for newsletter">Sign up!</button>   <!--ARIA Label-->
     </form>
